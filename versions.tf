@@ -3,7 +3,7 @@ terraform {
   required_providers {
     aws = {
       source                = "hashicorp/aws"
-      version               = ">= 4.9.0, < 5.0.0"
+      version               = ">= 4.9.0, < 6.0.0"
       configuration_aliases = [aws.us-east-1]
     }
 
@@ -13,8 +13,8 @@ terraform {
     }
 
     random = {
-      source = "hashicorp/random"
-      version = ">=2.3.0, < 3.5.0"
+      source  = "hashicorp/random"
+      version = ">=2.3.0, < 3.7.0"
     }
   }
 }
